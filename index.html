@@ -2,333 +2,579 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDC Vision Fund</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+
 
   <!-- Favicons -->
-  <link href="assets/img/partner3.webp" rel="icon">
+  <link href="assets/img/partner3.jpeg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Moderna - v4.8.0
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <style>
+    .btn {
+      padding: 1em 2.1em 1.1em;
+      border-radius: 3px;
+      margin: 8px 8px 8px 8px;
+      color: white;
+      background-color: #fbdedb;
+      display: inline-block;
+      background: #4299e1;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: .85em;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      /* width: 10vw; */
+    }
+
+    .btn:hover,
+    .btn:focus {
+      opacity: 0.8;
+    }
+
+    .btn:active {
+      -webkit-transform: scale(0.80);
+      -moz-transform: scale(0.80);
+      -ms-transform: scale(0.80);
+      -o-transform: scale(0.80);
+      transform: scale(0.80);
+    }
+
+    .btn.block {
+      display: block !important;
+    }
+
+    .btn.circular {
+      border-radius: 50em !important;
+    }
+
+    .mainSection {
+      background-image: url("assets/img/mainImage.png");
+      background-size: auto;
+      height: 90vh;
+      background-repeat: no-repeat;
+      padding-top: 6vw;
+    }
+
+    .main-title {
+      margin-top: 2vh;
+      color: #3b3b6c;
+      line-height: 15vh;
+      font-size: 17vh;
+      font-weight: 900;
+
+    }
+
+    .main-subTitle {
+      font-size: 2.5vw;
+      color: #3b3b6c;
+    }
+
+
+    .vision {
+      font-size: 9vh;
+    }
+
+    button {
+      background: #3b3b6c !important;
+    }
+
+
+
+    .section-heading {
+      font-size: 6vh;
+      font-weight: 700;
+    }
+
+    .text-xl {
+      font-size: 2.25rem;
+    }
+
+    .about {
+      font-size: 1.25rem;
+      margin: 1.5vw 0;
+    }
+
+    .py-24 {
+      padding-top: 2vw;
+    }
+
+
+    .process {
+      margin-top: 5vh;
+      padding-left: 20vw;
+      text-align: left;
+    }
+
+    .mainBtn {
+      background-color: #3b3b6c;
+    }
+
+
+
+    .contact {
+      font-size: 1.25rem;
+      margin-top: 3vw;
+
+    }
+
+    .footerSection {
+      color: white;
+    }
+
+    footer {
+      margin-top: 10vw;
+      background: #212529;
+      padding-top: 4vw;
+    }
+
+
+    .footf {
+
+      color: white;
+      justify-content: center;
+    }
+
+    .footfo {
+      width: inherit;
+      color: white;
+      text-align: center;
+    }
+
+
+
+
+
+    @media screen and (max-width:780px) {
+
+      .main-title {
+        font-size: 15vh;
+        line-height: 12vh;
+        /* background-color: yellow; */
+
+      }
+
+      .about {
+        font-size: 0.9rem;
+      }
+
+      .mainSection {
+        background: url("assets/img/mobileMain.png");
+        background-size: contain;
+
+      }
+
+      .vision {
+        font-size: 6vh;
+      }
+
+      .main-subTitle {
+        font-size: 4vh;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Vision Fund</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-     
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">We back <span  class="yellowTitle"> Dreamers</span></h2>
-          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</a> -->
-          <a href="mailto:pitch@visionfunds.in" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</a>
-
-
-
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">We back  <span  class="yellowTitle"> Visionaries</span></h2>
-          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</a> -->
-          <!-- <btn mailto="Enquiry@edcindia.in" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</btn> -->
-          <a href="mailto:pitch@visionfunds.in" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</a>
-
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">We back  <span  class="yellowTitle"> Founders</span></h2>
-   
-          <a href="mailto:pitch@visionfunds.in" class="btn-get-started animate__animated animate__fadeInUp">Pitch us</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-xl">Vision Fund</span>
       </a>
 
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
 
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-
-    <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/pexels-canva-studio-3153201.jpg" class="img-fluid" alt="">
-             </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5 rodd">
-
-           
-
-            <div class="icon-box">
-              <h4 class="title rolaTite"><a href="">What vision fund is all about?</a></h4>
-              <p class="description rolades">EDC's ₹100cr vision fund is an initiative to support early stage founders in their journey, we back founders across all the sectors with an initial capital of ₹5 lakhs to ₹1 crore.  </p>
-            </div>
-
-            <div class="sendBTN">
-
-              <!-- <a href="#" class="sendBtn">Send Pitch </a> -->
-          <!-- <a href="mailto:pitch@visionfunds.in" class="sendBtn">Pitch us</a> -->
-          <a href="mailto:pitch@visionfunds.in" class="btn purple circular">Pitch us</a>
-
-            </div>
+  </header>
 
 
 
 
+  <!-- ---------------------------------------image part------------------------------------- -->
 
-          </div>
-        </div>
+
+
+
+  <section class="text-gray-600 body-font   mainSection">
+    <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center ">
+      <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 main-title">₹100 crore <br /> <span
+            class="vision">Vision Fund </span> </h1>
+
+        <p class="text-sm mt-2 text-gray-500 mb-8 w-full main-subTitle">Backing Visionaries and Dreamers</p>
+        <a href="mailto:pitch@visionfunds.in" class="btn red circular mainBtn">Pitch us</a>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </div>
+  </section>
 
 
-    <!-- <p class="processT">Process</p> -->
+  <!-- -------------------------------------------About--------------------------------- -->
 
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" style="    width: 100%;
+            text-align: center;">About Vision Fund
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section class="services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box icon-box-pink">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">First step</a></h4>
-              <p class="description">Send us the mail for your funding requirement along with your pitch deck. 
-                In case you have doubt in designing your pitch or finance deck don’t waste your 50k in market for designing. Contact us and we will help you in designing your decks by your own.</div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-cyan">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Second step</a></h4>
-              <p class="description">For the second stage, the selected startups shall pitch their idea to our team.
-                In case the startups need mentorship, our team will guide you accordingly. </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Third step</a></h4>
-              <p class="description">During the final stage the selected startups shall pitch their idea to our investors body. </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-blue">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Fourth Step</a></h4>
-              <p class="description">due diligence and fund transfer.</p>
-            </div>
-          </div>
-
+        </h1>
+        <p class="mb-8 leading-relaxed">A startup without a funding source will flounder under the weight of its
+          own debt. Funding is the fuel on which a startup runs. A startup can take different avenues to
+          attain funding, and more than one option can be used. The chosen funding will depend on the
+          startup’s desire to be in debt, how solvent the startup owners are at the time the startup is
+          founded and the amount of money a startup will need to launch and maintain itself through a variety
+          of events. Startup owners, just like any other business owners, need additional funding to enhance,
+          expand, grow, or start their startup.
+          New ventures or startups do not just have to deal with a variety of processes like gaining traction,
+          ideation, expansion, etc. All these processes require money, and that money should be something that
+          should be provided to them at the right time so that the growth of the startup is not halted.
+          This is why startups should opt for ‘EDC 100 Crore Vision Fund.’
+          After acquiring the right amount of funds, we also help the business owners to ensure that the money
+          raised goes to the right place and is used for the right purpose.
+          A great idea and a strong will to succeed are just not enough in today’s generation. If you’re an
+          entrepreneur who’s looking to grow and scale, you should look into funding your startup business
+          through EDC 100 Crore Vision Fund. We provide the token amount to startups from INR 5Lakh to INR 1
+          Crore.
+        </p>
+        <div class="flex justify-center" style="    width: 100%;">
+          <!-- <button
+                        class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Pitch
+                        us</button> -->
+          <a href="mailto:pitch@visionfunds.in" class="btn red circular">Pitch us</a>
         </div>
-
       </div>
-    </section>End Services Section -->
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="assets/img/GettyImages-1128201585.jpg">
+      </div>
+    </div>
+
+  </section>
 
 
-    <section class="section">
-      <div class="container">
+  <!-- -------------------------------------------who can apply--------------------------------- -->
 
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-5" data-aos="fade-up">
-            <h2 class="section-heading">Process</h2>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
-            <div class="feature-1 text-center">
-              <div class="wrap-icon icon-1">
-                <i class="bi bi-envelope"></i>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Who can apply</h1>
+        <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">Any one looking to create
+          difference</h2>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path
+                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                </svg>
               </div>
-              <h3 class="mb-3">Mail us your Pitch deck</h3>
-              <p>In case you have doubt in designing your pitch or finance deck don’t waste your 50k in market for designing. Contact us and we will help you in designing your decks by your own.</div>
-          </p>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Ticket size</h2>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="feature-1 text-center">
-                <div class="wrap-icon icon-1">
-                  <i class="bi bi-person-check"></i>
-                </div>
-                <h3 class="mb-3">Pitch your Idea</h3>
-                <p>For the second stage, the selected startups shall pitch their idea to our team.
-                  In case the startups need mentorship, our team will guide you accordingly. </p>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">We support visionaries with an initial capital of ₹5 lakhs to ₹1
+                crore</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
               </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Sectors</h2>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-1 text-center">
-                <div class="wrap-icon icon-1">
-                  <i class="bi bi-currency-dollar"></i>
-                </div>
-                <h3 class="mb-3">Raise Funds</h3>
-                <p>During the final stage the selected startups shall pitch their idea to our investors body.  </div>
-                </p>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">We believe every sector has a potential therefore we are
+                sector-agnostic. </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-lightbulb" viewBox="0 0 16 16">
+                  <path
+                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                </svg>
               </div>
-          </div>
-          </div>
-        </div>
-      
-      </div>
-    </section>
-    
-
-    <!-- <section class="section partnerDiv">
-
-
-      <div class="partnerTitle">
-        OUR PARTNER
-      </div>
-
-      <div class="partnerImg">
-        <img  class="suImg" src="assets/img/WhatsApp Image 2022-01-26 at 7.52.09 PM.jpeg" alt="">
-      </div>
-    </section> -->
-    <section class="client">
-      <div class="container">
-        <div class="row">
-    
-          <div class="section-title">
-            <h2> FUND BY </h2>
-          </div>
-    
-          <div class="carousel-client">
-            <div class="partnerImg slide">
-               <a href="https://www.edcindia.in/">
-              <img class=" suImg"src="assets/img/partner3.webp">
-            </a> 
+              <h2 class="text-gray-900 text-lg title-font font-medium">Stage</h2>
             </div>
-            <div class="partnerImg slide"> 
-              <a href="https://startedup.in/">
-                <img class="suImg" src="assets/img/WhatsApp Image 2022-01-26 at 7.52.09 PM.jpeg">
-              </a> 
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">We back founders at all stages, whether its idea, MVP or growth. </p>
+
             </div>
-        </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main><!-- End #main -->
+    </div>
+  </section>
 
 
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-   
-    <div class="footer-top">
-    
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4 class="roCT"> Contact Us</h4>
-            <p class="roContact">
-          
-              EDC INDIA, Deopur, Kanpur,<br>
-              Uttar Pradesh, 209401,<br>
-              India <br><br>
-              <strong>Phone:</strong> 9792830382<br>
-              <strong>Email:</strong> pitch@visionfunds.in<br>
+  <!-- -------------------------------------------Timeline--------------------------------- -->
+  <div class="row justify-content-center text-center mb-5 process">
+    <div class="col-md-5" data-aos="fade-up">
+      <h2 class="section-heading">Process</h2>
+    </div>
+  </div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Mail your pitch deck</h2>
+            <p class="leading-relaxed">Mail us your pitch deck at pitch@visionfunds.in, if you face any doubt feel free
+              to reach us for the same.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone"
+              viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Introductory call</h2>
+            <p class="leading-relaxed">Founders will have a brief introductory call, once their pitch deck is evaluated.
             </p>
-
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Vision Fund</h3>
-            <p class="roContact">EDC's ₹100cr vision fund is an initiative to support early stage founders in their journey, we back founders across all the sectors with an initial capital of ₹5 lakhs to ₹1 crore.  </p>
-            <div class="sendBTN">
-
-              <!-- <a href="#" class="sendBtn">Send Pitch </a> -->
-          <!-- <a href="mailto:pitch@visionfunds.in" class="sendBtn">Pitch us</a> -->
-          <a href="mailto:pitch@visionfunds.in" class="btn purple circular">Pitch us</a>
-
-            </div>
-            
-
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+              class="bi bi-person-badge" viewBox="0 0 16 16">
+              <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Executive pitch</h2>
+            <p class="leading-relaxed">If their startup is shortlisted, Founders will pitch to the board. </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          4</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+              class="bi bi-person-check" viewBox="0 0 16 16">
+              <path
+                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              <path fill-rule="evenodd"
+                d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Investor's pitch</h2>
+            <p class="leading-relaxed">Founder will pitch to the investors directly, if approved by the board.</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+
+
+
+
+
+
+
+
+  <!-- -------------------------------------------Timeline--------------------------------- -->
+
+
+
+
+  <!-- -------------------------------------------partners--------------------------------- -->
+
+
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">SUPPORTING PARTNERS</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">₹100 crore Vision fund is a joint collaboration of
+          StartedUp and EDC India.
+        </p>
       </div>
-      <div class="credits">
-    
+      <div class="flex flex-wrap -m-4" style="justify-content: center;">
+
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <a href="http://startedup.in">
+
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="assets/img/ssss.png">
+            </a>
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">StartedUp</h2>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <a href="http://edcindia.in">
+
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="assets/img/Untitled design (1).png">
+            </a>
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">EDC India </h2>
+
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </section>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
+
+
+
+  <!-- -------------------------------------------footer--------------------------------- -->
+
+
+  <footer style=" margin-top: 10vw;" class="text-gray-600 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left footfo">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 footf">
+
+          <span class="ml-3 text-xl">Vision Fund</span>
+        </a>
+
+        <div class="footerSection">
+
+          <div class="footerAbout">
+            <div class="about">
+
+              ₹100 crore Vision fund is a joint collaboration of StartedUp and EDC India.
+            </div>
+
+            <div class="contact" style="display: flex; justify-content: center; align-items: center; margin-top: 8vh;">
+              <img src="assets/img/phone-call.png" style="    width: 30px;
+                            margin-right: 2vw;" alt="">
+
+              <div class="numbers">
+                <div class="cc">
+
+                  +91 8920665660
+                </div>
+                <div class="cc">
+                  +91 9792830382
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </footer>
 </body>
 
 </html>
